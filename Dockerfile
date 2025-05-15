@@ -14,5 +14,3 @@ COPY --from=builder /app/.venv .venv/
 COPY . .
 
 CMD ["/app/.venv/bin/gunicorn", "-b", "0.0.0.0:8080", "backend.app:create_app()"]
-
-
