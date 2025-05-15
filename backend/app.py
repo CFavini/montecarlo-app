@@ -34,7 +34,14 @@ def create_app():
     
     return app
 
+""" 
 if __name__ == '__main__':
     app = create_app()
     app.run(debug=True)
-    # Para rodar o app diretamente, descomente a linha abaixo
+    # Para rodar o app diretamente, descomente a linha abaixo 
+"""
+# Para rodar o app diretamente, descomente a linha abaixo
+if __name__ == "__main__":
+    app = create_app()
+    app.run(host='0.0.0.0', port=8080)
+    # app.run(debug=True)
