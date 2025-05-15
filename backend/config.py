@@ -10,6 +10,8 @@ class Config:
     '''
     SQLALCHEMY_DATABASE_URI = \
         'sqlite:///' + os.path.join(BASE_DIR, 'app.db')
-    '''
+
     SQLALCHEMY_DATABASE_URI = 'sqlite:////mnt/data/app.db'
+    '''
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///app.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
